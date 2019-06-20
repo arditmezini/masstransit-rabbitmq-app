@@ -1,7 +1,13 @@
-﻿echo Installing MassTransit.RabbitMQ.WindowsService.exe
+﻿echo Run As Administrator otherwise it won't work
+echo Installing MassTransit.RabbitMQ.WindowsService.exe
+
+rem  Go to correct path
+	cd %~dp0 
+	cd ..
+
 echo ---------------------------------------------------
-..\MassTransit.RabbitMQ.WindowsService.exe install
+	MassTransit.RabbitMQ.WindowsService.exe install
 echo ---------------------------------------------------
 echo Done.
 
-TIMEOUT /T 10 /NOBREAK
+TIMEOUT /T 30 /NOBREAK
