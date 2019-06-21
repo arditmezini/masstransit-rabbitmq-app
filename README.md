@@ -6,7 +6,7 @@ This project is composed by a Console Application and Window Service.
  The console app is used to send the commands to the RabbitMQ Server.
  
 ### Windows Service
- The windows service consumes the commands from the RabbitMQ Server.
+ The windows service build with TopShelf consumes the commands from the RabbitMQ Server.
  
 #### To test the full cycle, you need:
  1. Have installed [Erlang](https://www.erlang.org/downloads "Erlang") and [RabbitMQ](https://www.rabbitmq.com/download.html "RabbitMQ")
