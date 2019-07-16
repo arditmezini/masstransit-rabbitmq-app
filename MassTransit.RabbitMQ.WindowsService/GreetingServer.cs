@@ -1,11 +1,12 @@
 ﻿using MassTransit.RabbitMQ.Common.Command.Consumer;
 using MassTransit.RabbitMQ.Common.Common;
+using MassTransit.RabbitMQ.Common.Contracts;
 using MassTransit.RabbitMQ.Common.Extensions;
 using Topshelf.Logging;
 
 namespace MassTransit.RabbitMQ.WindowsService
 {
-    public class GreetingServer
+    public class GreetingServer : IServer
     {
         private readonly IBusControl bus;
         private readonly LogWriter log = HostLogger.Get<GreetingServer>();
